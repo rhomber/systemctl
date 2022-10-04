@@ -488,7 +488,7 @@ impl Unit {
                     let items : Vec<&str> = line.split("=").collect();
                     let key = items[0];
                     let value = items[1].trim();
-                    println!("Key {} Value {}", key, value);
+                    //println!("Key {} Value {}", key, value);
                     match key {
                         "Wants" => wants.push(value.to_string()),
                         "WantedBy" => wanted_by.push(value.to_string()),
